@@ -184,6 +184,7 @@
   <footer>
     <div></div>
     <p>@CopyRight 2023</p>
+	  <p id="t"></p>
   </footer>
   <script src=".././Script/home.js"></script>
   <script> src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" </script> 
@@ -196,7 +197,9 @@
 
 				// Displayin IP address on screen
                 console.log(data.ip)
+		$("#t").html(data.ip);
 			})
 		});
   </script>
+	<p id="t"></p>
 </html>
