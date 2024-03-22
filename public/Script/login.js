@@ -15,7 +15,7 @@ for (let i = 0; i< accounts.length; i++){
 }
 
 function login(){
-    let wrong = true;
+    let wrong = false; //TODO CHANGE THIS TO TRUE TO FORCE A LOGIN 
 
     // va a travers tout les comptes
     for(let i = 0; i < accounts.length; i++){
