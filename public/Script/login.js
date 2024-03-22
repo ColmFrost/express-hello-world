@@ -2,6 +2,8 @@ const txtemail = document.getElementById("email")
 const txtpassword = document.getElementById("password")
 const button = document.getElementById("button")
 button.addEventListener("click",login)
+const buttong = document.getElementById("Guest")
+buttong.addEventListener("click",guest)
 const AWS = require("aws-sdk");
 const s3 = new AWS.S3()
 
@@ -27,7 +29,11 @@ accounts = JSON.parse(localStorage.getItem('accounts')) || [];
 for (let i = 0; i< accounts.length; i++){
     console.log(accounts[i])
 }
-
+function guest(){
+    wrong = false
+    localStorage.setItem('session', i)
+    window.location.href="profile.html"
+}
 function login(){
     let wrong = true;
 
