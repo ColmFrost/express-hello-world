@@ -78,7 +78,7 @@ function logout(){
 
 // Add "https://api.ipify.org?format=json" to 
 		//get the IP Address of user
-		$(document).ready(()=>{
+		(document).ready(()=>{
 			$.getJSON("https://api.ipify.org?format=json",
 			
       function (data) {
