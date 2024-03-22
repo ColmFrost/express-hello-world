@@ -16,6 +16,8 @@ let r = R;
 let count= (255-G)/cols;
 let x = 0
 
+console.log('testing')
+
 // degrader de couleurs
 
 // pour chaque carreau
