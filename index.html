@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF  -8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My store</title>
+    <link rel="icon" href="../Ressources/logo.png">
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  
+  <!-- header -->
+  <header> 
+    <!-- left header -->
+    <div class="header_left">   
+      <img src="../Ressources/logo.png" alt="">
+    </div>
+   
+    
+    <!-- middle header -->
+    <nav class="header_middle" id="header_middle">
+      <a  class="option" href="./accueil.html">
+        <h2 class="material-icons"> Home </h2> 
+        Home
+      </a>
+
+      <a  class="option" href="./shopping.html">
+        <h2 class="material-icons"> shopping_cart </h2> 
+        Shopping
+      </a>
+
+      <div class="option"> 
+        <h2 class="material-icons"> description </h2>
+        <select onchange="location = this.value;">
+          <option style="display:none;" selected> Pages </option>
+          <option value="creerUnePage.html"> Create a page </option> 
+          <option value="mesPages.html"> See my pages  </option> 
+        </select>
+      </div>
+
+      <div class="option">
+        <h2 class="material-icons"> person </h2> 
+        <select onchange="location = this.value;">
+          <option style="display:none;" selected> Account </option>
+          <option value="signUp.html"> create an account </option> 
+          <option value="logIn.html"> Register </option> 
+          <option value="profile.html"> Profile </option>
+          <option value="banque.html"> Financials </option>
+        </select>
+      </div>
+
+      <a  class="option" onclick="logout()">
+        <h2 class="material-icons"> logout </h2> 
+        Logout
+      </a>
+
+      <a class="menu" onclick="res()">    
+        <h2 class="material-icons"> menu </h2>
+      </a>
+    </nav>
+  </header>
+  
+  <!-- animation -->
+  <div id="anim">  
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+   </div>
+   <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <!-- information -->
+  <main>
+     <article>
+      <h2> Why this site?</h2>
+      <p> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti, enim obcaecati, laudantium libero dolores non officiis aspernatur iure, ut porro saepe illum cumque cum? Corporis iste veritatis itaque nulla! </p>
+        <h3>
+          Did you know?
+        </h3>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sapiente fugit esse accusamus officia iste inventore, facere placeat alias temporibus doloribus saepe aut? Placeat nesciunt qui veniam in recusandae tenetur?
+        </p>
+        </article>
+        
+    <aside>
+      <H2>
+        About me
+      </H2>
+      <img src="../Ressources/auteur.jpg" alt="">
+      <p>
+        tbd
+      </p>
+      <!-- reseau sociaux -->
+        <ul>
+          <li> <a href="https://www.facebook.com/"><img src="../Ressources/facebook.png"></a></li>
+          <li> <a href="https://www.instagram.com/"><img src="../Ressources/instagram.jpg"></a></li>
+          <li> <a href="https://twitter.com/?lang=en"><img src="../Ressources/twiter.png"></a></li>
+          <li> <a href="https://ca.linkedin.com/"><img src="../Ressources/linkedin.png"></a></li>
+        </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <div></div>
+    <p>@CopyRight 2023</p>
+  </footer>
+  <script src=".././Script/home.js"></script>
+</html>
