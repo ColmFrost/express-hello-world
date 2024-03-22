@@ -75,16 +75,3 @@ function logout(){
     localStorage.removeItem("session")
     window.location.href="logIn.html";
 }
-
-// Add "https://api.ipify.org?format=json" to 
-		//get the IP Address of user
-		(document).ready(()=>{
-			$.getJSON("https://api.ipify.org?format=json",
-			
-      function (data) {
-				// Displayin IP address on screen
-                console.log(data.ip)
-                $("#t").html(data.ip);
-			})
-		});
-	

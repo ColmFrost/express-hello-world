@@ -6,7 +6,21 @@ const AWS = require("aws-sdk");
 const s3 = new AWS.S3()
 
 
-let accounts = []
+let accounts = [
+    {
+        index: 0,
+        user: 'Admin@gmail.com',
+        password: 'admin123',
+      },
+]
+
+const newAccount = {
+    index: accounts.length,
+    user: '0xNewAddress',
+    password: '0xNewPrivateKey',
+  };
+  accounts.push(newAccount);
+
 accounts = JSON.parse(localStorage.getItem('accounts')) || [];
 
 // montre les comptes
@@ -15,7 +29,7 @@ for (let i = 0; i< accounts.length; i++){
 }
 
 function login(){
-    let wrong = false; //TODO CHANGE THIS TO TRUE TO FORCE A LOGIN 
+    let wrong = true;
 
     // va a travers tout les comptes
     for(let i = 0; i < accounts.length; i++){
