@@ -1,29 +1,29 @@
-const txtemail = document.getElementById("email")
-const txtpassword = document.getElementById("password")
+const txtemail = document.getElementById("email").value
+const txtpassword = document.getElementById("password").value
 const button = document.getElementById("button")
 button.addEventListener("click",login)
 const buttong = document.getElementById("Guest")
 buttong.addEventListener("click",guest)
 const AWS = require("aws-sdk");
 const s3 = new AWS.S3()
-
+let wrong = true;
 
 let accounts = [
     {
-        index: 0,
-        user: 'Admin@gmail.com',
-        password: 'admin123',
+        index: "0",
+        user: "admin",
+        password: "admin123"
       },
 ]
 
-const newAccount = {
-    index: accounts.length,
-    user: '0xNewAddress',
-    password: '0xNewPrivateKey',
-  };
-  accounts.push(newAccount);
+// const newAccount = {
+//     index: accounts.length,
+//     user: '0xNewAddress',
+//     password: '0xNewPrivateKey',
+//   };
+//   accounts.push(newAccount);
 
-accounts = JSON.parse(localStorage.getItem('accounts')) || [];
+//accounts = JSON.parse(localStorage.getItem('accounts')) || [];
 
 // montre les comptes
 for (let i = 0; i< accounts.length; i++){
@@ -34,8 +34,16 @@ function guest(){
     localStorage.setItem('session', i)
     window.location.href="profile.html"
 }
+
+function logintest(username, password) {
+
+accounts.forEach(user)
+
+
+
+}
 function login(){
-    let wrong = true;
+    
 
     // va a travers tout les comptes
     for(let i = 0; i < accounts.length; i++){
